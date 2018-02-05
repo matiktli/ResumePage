@@ -11,13 +11,15 @@
         this.context = element.getContext( "2d" );
         this.refElement = element.parentNode;
         this.loaded = 0;
-        this.start = 4.72;
+        this.start = 4.70;
         this.width = this.context.canvas.width;
         this.height = this.context.canvas.height;
         this.total = parseInt( this.refElement.dataset.percent, 10 );
         this.timer = null;
 
         this.diff = 0;
+
+
 
         this.init();
     };
@@ -93,7 +95,7 @@
     };
 
     document.addEventListener( "DOMContentLoaded", function() {
-        var circularBars = new CircularSkillBar( "#skill-bars .bar" );
+        var circularBars = new CircularSkillBar( "#bars .bar" );
     });
 
 })();

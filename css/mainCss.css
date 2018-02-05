@@ -1,7 +1,7 @@
 body{
     background-color: ghostwhite;
     padding-left: 17rem;
-    padding-top: 54px;
+    padding-top: 0px;
 }
 
 h1,h2,h3{
@@ -79,6 +79,13 @@ section.section-all{
 
 .description{
 
+}
+
+#bar1 {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    position: relative;
 }
 
 

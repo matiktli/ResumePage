@@ -16,8 +16,8 @@
 
 
     // HIGHLIGHT ACTUAL POSITION
-    $('body').scrollspy({
-        target: '#navbar-vertical'
-    });
+        $('body').scrollspy({
+            target: '#navbar-vertical'
+        });
 
 })(jQuery);

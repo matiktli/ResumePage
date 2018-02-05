@@ -42,7 +42,22 @@
             <!-- ABOUT SECTION-->
             <section class="section-all p-3 p-lg-5 d-flex d-column" id="about-section">
                 <div class="my-auto">
-                    <h1>MATEUSZ KITLINSKI</h1>
+                    <h1>MATEUSZ
+                        <span class="text-primary">
+                            KITLINSKI
+                        </span>
+                    </h1>
+                    <div class="additions">
+                        9 Dallow Road, LU1 1NH, 07404304283
+                    </div>
+                    <div class="description">
+                        I am an enthusiastic Computer Science and Technology student at University of
+                        Bedfordshire who enjoys taking on new and different challenges with the ever constant aim
+                        of improving myself and my skills. I feel that working alongside my studies has greatly
+                        contributed to developing my prioritization skills as well as my time management skills. In
+                        addition, I feel that my ability to work under pressure has been greatly enhanced as I have
+                        balanced both work and university deadlines alongside one another.
+                    </div>
 
 
 
@@ -55,6 +70,18 @@
                     <h1>Skills</h1>
 
 
+                    <div id="skill-bars" class="row text-secondary">
+                        <div class="bar" data-percent="90">
+                            <h2>JAVA</h2>
+                            <canvas class="bar-circle" width="100" height="100"></canvas>
+                        </div>
+                        <div class="bar" data-percent="70">
+                            <h2>SPRING</h2>
+                            <canvas class="bar-circle" width="100" height="100"></canvas>
+                        </div>
+                    </div>
+
+
 
                 </div>
             </section>
@@ -64,8 +91,17 @@
                 <div class="my-auto">
                     <h1>Experience</h1>
 
-
-
+                    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                        <div class="resume-content mr-auto">
+                            <h3>Jaksiemasz.care - mobile application</h3>
+                            <div class=""><span class="additions">Role: </span>Back-end Developer</div>
+                            <div class=""><span class="additions">Tasks: </span>Server back-end, using restful api</div>
+                            <div class=""><span class="additions">Technologies: </span>Java, Spring Boot, Restful web services, Android, MySQL</div>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary">2016 - 2017</br>Poland</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -74,8 +110,29 @@
                 <div class="my-auto">
                     <h1>Education</h1>
 
+                    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                        <div class="resume-content mr-auto">
+                            <h3>University of Bedfordshire</h3>
+                            <div class=""><span class="additions">School: </span>School of Computer Science and Technology</div>
+                            <div class=""><span class="additions">Course: </span>BSc (Hons) Software Engineering</div>
+                            <div class=""><span class="additions">Skills gained: </span>Modeling, designing and developing applications</div>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary">2017 - Present</br>United Kingdom</span>
+                        </div>
+                    </div>
 
-
+                    <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                        <div class="resume-content mr-auto">
+                            <h3>Upper secondary school of Communications</h3>
+                            <div class=""><span class="additions">Name: </span>Zespół Szkół Łączności</div>
+                            <div class=""><span class="additions">Specialization: </span>Information and Communication Technology</div>
+                            <div class=""><span class="additions">Skills gained: </span>Planning, building and managing Local Networks</div>
+                        </div>
+                        <div class="resume-date text-md-right">
+                            <span class="text-primary">2012 - 2016</br>Poland</span>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -83,7 +140,10 @@
             <section class="section-all p-3 p-lg-5 d-flex flex-column" id="interest-section">
                 <div class="my-auto">
                     <h1>Interest</h1>
-
+                    I actively enjoy improving my programming skills, learning
+                    about new technologies and future trends. I also enjoy doing sports,
+                    especially working out with my own body mass(Calisthenics) and swimming.
+                    In the future I am planning to take part in Calisthenics competitions.
 
 
                 </div>
@@ -102,5 +162,7 @@
         <script src="vendor/bootstrap/js/bootstrap.bundle.js"></script>
         <script src="vendor/jquery-easing/jquery.easing.js"></script>
         <script src="js/mainJs.js"></script>
+        <script src="js/skillBarJs.js"></script>
+
     </body>
 </html>

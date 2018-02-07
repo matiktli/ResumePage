@@ -64,4 +64,20 @@ var inview = new Waypoint.Inview({
     }
 });
 
+/*
+var sections=["about","skill","experience","education","interest"];
+for(var x=0;x<4;x++) {
+    var waypointsDown = $("#topic" + x).waypoint(function (direction) {
+        if (direction === "down" && x<5) {
+            console.log("load down"+sections[x]);
+            $(sections[x+1]+'-section').animate({opacity:1},1000);        }
+    }, {offset: '5%'});
+    var waypointsUp = $("#topic" + x).waypoint(function (direction) {
+        if (direction === "up" && x>=1) {
+            console.log("load up "+sections[x-1]);
+            $(sections[x-1]+'-section').animate({opacity:0},1000);        }
+    }, {offset: '60%'});
+}
+
+*/
 

@@ -84,6 +84,7 @@ section.section-all{
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
     height: 100vh;
+    opacity: 1;
 }
 
 .additions {

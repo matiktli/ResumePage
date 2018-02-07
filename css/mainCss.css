@@ -28,6 +28,14 @@ h2{
     padding-left: 15px;
 }
 
+
+.skill-medal{
+    border-bottom-right-radius :100vh;
+    border-bottom-left-radius :100vh;
+    border: solid #234f7f;
+    background-color: #e2c400;
+}
+
 #navbar-vertical{
     font-family: 'Days One', sans-serif;
     text-align: center;
@@ -87,12 +95,16 @@ section.section-all{
 
 .skill-bar-circle {
     margin: 10px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     position: relative;
 }
 
 
+.icon{
+    font-size: 4.5rem !important;
+    /*opacity: 0.4; */
+}
 
 .bg-primary{
     background-color: #234f7f !important;

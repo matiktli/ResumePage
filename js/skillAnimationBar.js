@@ -1,11 +1,12 @@
 var allBars = document.getElementsByClassName('skill-bar-circle');
 var percentage=[90,85,70];
+var icons=['devicon-java-plain','icon-spring'];
 var i;
 var cir=[];
 for(i=0;i<allBars.length;i++){
     cir[i] = new ProgressBar.Circle('#skill-bar'+i, {
         easing: 'bounce',
-        strokeWidth: 10,
+        strokeWidth: 15,
         trailColor: '#cad9ea',
         text: {
             style: {
@@ -30,8 +31,9 @@ var inview = new Waypoint.Inview({
     element: $('#skill-bar0')[0],
     enter: function(direction) {},
     entered: function() {
-        var k;
-        for(k=0;k<cir.length;k++){
+        var x=0;
+        for(var k=0;k<cir.length;k++){
+            (function () {
             cir[k].animate(percentage[k]/100, {
                 duration: 4000, from: {color: '#f4fcff'}, to: {color: '#15286a'},
                 step: function(state, circle) {
@@ -40,10 +42,15 @@ var inview = new Waypoint.Inview({
                     if (value === 0) {
                         circle.setText('');
                     } else {
-                        circle.setText(value+"%");
+                        
+                        circle.setText("<i class='"+icons[x%cir.length]+" icon' style='opacity: "+(value/100)*0.5+"'/>");
                     }
+                    x++; //GOD DAMN IT WHAT HAVE I DONE XD XD XD
+
+
                 }
-            });
+            })
+            })();
         }
 
     },

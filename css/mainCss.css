@@ -1,16 +1,17 @@
 body{
-    background-color: ghostwhite;
+    background-color: #fbf0bb;
     padding-left: 17rem;
     padding-top: 0px;
 }
 
 h1,h2,h3{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Days One', sans-serif;
     text-transform: uppercase;
-    color: #0b8211;
+    color: #347199;
 }
 h1{
     font-size: 4rem;
+    color: #2f5377;
     line-height: 5.5rem;
     font-weight: 400;
 
@@ -20,8 +21,15 @@ h2{
     font-size: 2rem;
 }
 
+.normal-text{
+    font-family: 'Doppio One', sans-serif;
+    color: #477eb4;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
 #navbar-vertical{
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Days One', sans-serif;
     text-align: center;
     font-size: larger;
     position: fixed;
@@ -64,25 +72,21 @@ h2{
 }
 
 section.section-all{
-    border-bottom: 1px solid #3e444e;
+    border-bottom: 1px solid #2f5377;
     padding-top: 5rem !important;
     padding-bottom: 5rem !important;
     height: 100vh;
 }
 
-
-
 .additions {
     text-transform: uppercase;
     font-size: 1.4rem;
+    font-weight: bold;
 }
 
-.description{
 
-}
-
-#bar1 {
-    margin: 20px;
+.skill-bar-circle {
+    margin: 10px;
     width: 200px;
     height: 200px;
     position: relative;
@@ -90,40 +94,14 @@ section.section-all{
 
 
 
-/*
-#skill-bars {
-    margin: 2em auto;
-    max-width: 960px;
-    overflow: hidden;
-}
-
-.bar {
-    float: left;
-    width: 20%;
-    text-align: center;
-}
-
-
-.bar h1 {
-    font-size: 1.4em;
-    font-weight: normal;
-    margin: 0;
-    text-transform: uppercase;
-}
-.bar-circle {
-    display: block;
-    margin: 0.7em auto;
-}
-*/
-
 .bg-primary{
-    background-color: #0b8211 !important;
+    background-color: #234f7f !important;
 }
 
 .text-primary {
-    color: #bd111b !important;
+    color: #477eb4 !important;
 }
 
 .text-secondary{
-    color: #c66a06 !important;
+    color: #cabb0f !important;
 }

@@ -5,11 +5,12 @@ var cir=[];
 for(i=0;i<allBars.length;i++){
     cir[i] = new ProgressBar.Circle('#skill-bar'+i, {
         easing: 'bounce',
-        strokeWidth: 20,
+        strokeWidth: 10,
         trailColor: '#cad9ea',
         text: {
             style: {
-                color: '#f00',
+                fontFamily: '',
+                color: '#234f7f',
                 position: 'absolute',
                 left: '50%',
                 top: '50%',
@@ -32,7 +33,7 @@ var inview = new Waypoint.Inview({
         var k;
         for(k=0;k<cir.length;k++){
             cir[k].animate(percentage[k]/100, {
-                duration: 4000, from: {color: '#20ff1b'}, to: {color: '#ff1719'},
+                duration: 4000, from: {color: '#f4fcff'}, to: {color: '#15286a'},
                 step: function(state, circle) {
                     circle.path.setAttribute('stroke', state.color);
                     var value = Math.round(circle.value() * 100);

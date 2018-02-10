@@ -1,6 +1,8 @@
 var allBars = document.getElementsByClassName('skill-bar-circle');
-var percentage=[90,85,70];
-var icons=['devicon-java-plain','icon-spring'];
+var percentage=[90,85,90,70,
+    80,75,65];
+var icons=['devicon-java-plain','icon-spring','devicon-mysql-plain-wordmark','devicon-mongodb-plain-wordmark',
+    'devicon-html5-plain-wordmark','devicon-javascript-plain','devicon-css3-plain-wordmark'];
 var i;
 var cir=[];
 for(i=0;i<allBars.length;i++){
@@ -42,7 +44,7 @@ var inview = new Waypoint.Inview({
                     if (value === 0) {
                         circle.setText('');
                     } else {
-                        
+
                         circle.setText("<i class='"+icons[x%cir.length]+" icon' style='opacity: "+(value/100)*0.5+"'/>");
                     }
                     x++; //GOD DAMN IT WHAT HAVE I DONE XD XD XD
